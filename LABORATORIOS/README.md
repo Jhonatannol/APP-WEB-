@@ -14,7 +14,7 @@ Familiarizar al estudiante con la sintaxis básica de **JavaScript** mediante la
 
 # Mi Proyecto
 
-![Imagen de ejemplo](APPWEB/LABORATORIOS/images/CAP.jpeg)
+![Texto alternativo](images/CAP.jpg)
 
 1. **Extracción de Datos de Facebook:**
    - Se utilizó una **página de Facebook** como base para recolectar información sobre los **amigos**. De las tarjetas de perfil de los usuarios, se extrajeron datos como **nombres**, **apellidos**, **edades** y **direcciones** ficticias.
@@ -64,3 +64,5 @@ LABORATORIOS/
 ├── LAB4.js        # Código JavaScript con ejemplos de objetos y arreglos.
 ├── README.md      # Este archivo.
 ```
+
+[def]: APPWEB/LABORATORIOS/images/CAP.jpeg
