@@ -1,0 +1,19 @@
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;  /* Usamos Arial o cualquier fuente sans-serif */
+    text-align: center;  /* Centrar el texto en la página */
+    padding: 30px;  /* Añadir espacio alrededor del contenido */
+}
+
+/* Estilo para el campo de entrada */
+input {
+    padding: 8px;  /* Añadir relleno dentro del campo de entrada */
+    font-size: 16px;  /* Establecer el tamaño de la fuente */
+}
+
+/* Estilo para el botón */
+button {
+    padding: 8px 12px;  /* Añadir relleno dentro del botón */
+    font-size: 16px;  /* Establecer el tamaño de la fuente */
+    margin-left: 10px;  /* Separar el botón del campo de entrada */
+}

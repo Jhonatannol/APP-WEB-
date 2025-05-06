@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <!-- Definir el conjunto de caracteres para asegurar que se muestren bien los caracteres especiales -->
+  <meta charset="UTF-8" />
+  <!-- Hacer la página responsiva, adaptándola a diferentes tamaños de pantalla -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Título que se mostrará en la pestaña del navegador -->
+  <title>LocalStorage + Módulos</title>
+  <!-- Enlazar el archivo de estilo CSS para darle formato a la página -->
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+
+<body>
+  <!-- Título de la página -->
+  <h1>Guardar nombre en LocalStorage</h1>
+
+  <!-- Campo de entrada donde el usuario puede escribir su nombre -->
+  <input type="text" id="nombreInput" placeholder="Escribe tu nombre" />
+
+  <!-- Botón que el usuario presiona para guardar su nombre -->
+  <button id="guardarBtn">Guardar</button>
+
+  <!-- Párrafo vacío donde se mostrará el saludo con el nombre guardado -->
+  <p id="saludo"></p>
+
+  <!-- Enlazar el archivo main.js, que contiene el comportamiento JavaScript -->
+  <script type="module" src="main.js"></script>
+</body>
+
+
+</html>

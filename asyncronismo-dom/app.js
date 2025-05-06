@@ -1,11 +1,10 @@
-// URL de la API de The Dog API (reemplaza 'YOUR_API_KEY' con tu clave real)
 let obtenerRazas = 'https://api.thedogapi.com/v1/breeds';
 
-// Función asincrónica para obtener los datos
 (async function conectarAPI() {
   try {
     // Mostrar el indicador de carga
     const indicadorCarga = document.getElementById('cargando');
+    const progressBar = document.getElementById('progressBar');
     indicadorCarga.style.display = 'block';
 
     // Realizar la solicitud asincrónica
@@ -14,6 +13,17 @@ let obtenerRazas = 'https://api.thedogapi.com/v1/breeds';
         'x-api-key': 'YOUR_API_KEY' // Reemplaza con tu clave de API
       }
     })).json();
+
+    // Mostrar progreso de carga (simulación de barra de carga)
+    let progress = 0;
+    const interval = setInterval(() => {
+      if (progress < 100) {
+        progress += 10;
+        progressBar.value = progress;
+      } else {
+        clearInterval(interval); // Detener la barra cuando termine la carga
+      }
+    }, 100); // Aumento de 10% cada 100ms (puedes ajustar esto según el tiempo de la solicitud)
 
     // Manipular el DOM para mostrar las razas de perros
     const resultadosDiv = document.getElementById('resultados');
@@ -33,7 +43,6 @@ let obtenerRazas = 'https://api.thedogapi.com/v1/breeds';
     indicadorCarga.style.display = 'none';
 
   } catch (error) {
-    // Mostrar error en consola si no se puede obtener la respuesta
     console.log(error);
   }
 })();
